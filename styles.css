@@ -3,6 +3,7 @@
     --base-100:#fffffe;
     --neutral-focus:#121629;
     --accent:#eebbc3;
+    --secondary:#b8c1ec;
 }
 
 *{
@@ -77,4 +78,37 @@ section{
     color:var(--accent);
     font-size:25px 0;
     font-style:italic;
+}
+
+#projects {
+    background-color: var(--secondary);
+    color: var(--neutral);
+}
+
+#projects h1{
+    border-bottom: 5px solid var(--neutral);
+    width: fit-content
+}
+
+#projects .projects {
+    display:grid;
+    grid-template-columns:  repeat(auto-fit,minmax(300px 1fr));
+    gap:30px;
+    padding:20px;
+    place-items: center;
+    max-width:1200px;
+    margin:auto;
+}
+
+#projects .project-title{
+   height: 525px;
+   width:100%;
+   display: flex;
+   flex-direction:column;
+}
+
+#projects .project-title img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
